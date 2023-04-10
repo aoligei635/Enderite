@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "lolenderite:enderite_hoe"
+    },
+    "addition": {
+        "item": "lolenderite:obsidian_infused_enderite_ingot"
+    },
+    "result": {
+        "item": "lolenderite:obsidian_infused_enderite_hoe"
+    }
+}

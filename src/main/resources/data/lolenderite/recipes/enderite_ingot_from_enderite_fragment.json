@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "lolenderite:enderite_fragment"
+        },
+        {
+            "item": "lolenderite:enderite_fragment"
+        },
+        {
+            "item": "lolenderite:enderite_fragment"
+        },
+        {
+            "item": "minecraft:end_stone"
+        }
+    ],
+    "result": {
+        "item": "lolenderite:enderite_ingot",
+        "count": 1
+    }
+}
