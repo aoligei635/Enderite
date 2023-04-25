@@ -63,7 +63,7 @@ header{
     position: relative;
     padding: 3em;
     width: 100%;
-    height: 15em;
+    height: 17em;
     background: rgb(205, 80, 255);
     border-left: 3em solid black;
     border-right: 3em solid black;
@@ -107,7 +107,7 @@ header{
 }
 .text{
     position: absolute;
-    bottom: 2.3em;
+    bottom: 3em;
     font-size: 10;
     font-weight: 200;
     transition: 0.25s;
@@ -121,19 +121,6 @@ header{
     position: relative;
     list-style: none;
     margin-bottom: 3%;
-}
-.welcome{
-    position: relative;
-    color: white;
-    list-style: none;
-    padding: 50px 25px;
-    width: 100%;
-    height: 20em;
-    justify-content: center;
-    align-items: center;
-    background: rgb(205, 80, 255);
-    border-left: 2em solid black;
-    border-right: 2em solid black;
 }
 .about{
     position: relative;
