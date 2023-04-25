@@ -113,10 +113,6 @@ header{
     transition: 0.25s;
     color: white;
 }
-.home{
-    margin-top: 10px;
-    position: relative;
-}
 .list{
     position: relative;
     list-style: none;
@@ -127,10 +123,8 @@ header{
     color: white;
     list-style: none;
     padding: 50px 25px;
-    left: 2.5%;
-    width: 95%;
-    justify-content: center;
-    align-items: center;
+    margin-left: 3em;
+    margin-right: 3em;
     background: rgb(205, 80, 255);
 }
 .vid{
@@ -139,10 +133,8 @@ header{
     color: white;
     list-style: none;
     padding: 50px 25px;
-    left: 2.5%;
-    width: 95%;
-    justify-content: center;
-    align-items: center;
+    margin-left: 3em;
+    margin-right: 3em;
     background: rgb(205, 80, 255);
 }
 .vids{
