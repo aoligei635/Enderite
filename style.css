@@ -126,7 +126,7 @@ header{
     list-style: none;
     display: inline-block;
 }
-@extra (max-width: 670px){
+@media (max-width: 670px){
     .vids {
         margin-bottom: 2%;
         position: relative;
