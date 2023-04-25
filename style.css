@@ -118,18 +118,8 @@ header{
     list-style: none;
     margin-bottom: 3%;
 }
-.about{
+.extra{
     position: relative;
-    color: white;
-    list-style: none;
-    padding: 50px 25px;
-    margin-left: 3em;
-    margin-right: 3em;
-    background: rgb(205, 80, 255);
-}
-.vid{
-    position: relative;
-    text-align: center;
     color: white;
     list-style: none;
     padding: 50px 25px;
