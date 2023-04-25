@@ -4,24 +4,23 @@
     padding: 0;
     font-family: sans-serif;
 }
+html{
+    height: 100%;
+}
 body{
+    position: relative;
     background: url(img/background.png);
     background-repeat: repeat;
     background-size: 50%;
-    padding-top: 66px;
+    padding-top: 4.7em;
+    padding-bottom: 4.7em;
+    min-height: 100vh;
 }
 h1{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-    color: white;
-}
-.h{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
     color: white;
 }
 h2{
@@ -60,142 +59,70 @@ header{
 .nav li a:hover{
     color: aqua;
 }
-.contact{
+.dabox{
     position: relative;
-    height: 130px;
-    width: 60%;
-    left: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 3em;
+    width: 100%;
+    height: 15em;
     background: rgb(205, 80, 255);
-    border-bottom: 25px solid rgb(205, 80, 255);
+    border-left: 3em solid black;
+    border-right: 3em solid black;
+    margin-bottom: 2em;
 }
-.contact ul{
-    display: flex;
-}
-.contact ul li{
-    position: relative;
-    list-style: none;
-    width: 70px;
-    height: 35px;
-}
-.contact ul li a{
-    position: relative;
+.dabox div{
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
-.contact ul li a .icon{
+.dabox div a{
+    display: flex;
+    justify-content: center;
+}
+.icon{
     position: relative;
     line-height: 40px;
     transition: 0.5s;
     font-size: 45px;
     color: white;
 }
-.contact ul li a .text{
-    position: absolute;
-    font-size: 10;
-    bottom: -12px;
-    font-weight: 200;
-    transition: 0.25s;
-    color: white;
-}
-.media{
-    position: relative;
-    height: 130px;
-    width: 60%;
-    left: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgb(205, 80, 255);
-    border-bottom: 25px solid rgb(205, 80, 255);
-}
-.media ul{
-    display: flex;
-}
-.media ul li{
-    position: relative;
-    list-style: none;
-    width: 70px;
-    height: 35px;
-}
-.media ul li a{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.media ul li a .iconYT{
+.iconYT{
     position: relative;
     line-height: 40px;
     transition: 0.5s;
     font-size: 45px;
     color: red;
 }
-.media ul li a .iconTW{
+.iconTW{
     position: relative;
     line-height: 40px;
     transition: 0.5s;
     font-size: 45px;
     color: rebeccapurple;
 }
-.media ul li a .iconDC{
+.iconDC{
     position: relative;
     line-height: 40px;
     transition: 0.5s;
     font-size: 45px;
     color: blue;
 }
-.media ul li a .text{
+.text{
     position: absolute;
+    bottom: 2.3em;
     font-size: 10;
-    bottom: -12px;
     font-weight: 200;
     transition: 0.25s;
     color: white;
-}
-.image{
-    margin-top: 10px;
-    position: relative;
-}
-.image ul li{
-    position: relative;
-    list-style: none;
-    margin-bottom: 3%;
-}
-.image ul li .images{
-    position: relative;
-    color: white;
-    list-style: none;
-    padding: 50px 25px;
-    width: 100%;
-    height: 15em;
-    justify-content: center;
-    align-items: center;
-    background: rgb(205, 80, 255);
-    border-left: 2em solid black;
-    border-right: 2em solid black;
-    margin-bottom: 13.7%;
-}
-.image ul li .images div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .home{
     margin-top: 10px;
     position: relative;
 }
-.home ul li{
+.list{
     position: relative;
     list-style: none;
     margin-bottom: 3%;
 }
-.home ul li .welcome{
+.welcome{
     position: relative;
     color: white;
     list-style: none;
@@ -208,7 +135,7 @@ header{
     border-left: 2em solid black;
     border-right: 2em solid black;
 }
-.home ul li .about{
+.about{
     position: relative;
     color: white;
     list-style: none;
@@ -219,7 +146,7 @@ header{
     align-items: center;
     background: rgb(205, 80, 255);
 }
-.home ul li .vid{
+.vid{
     position: relative;
     text-align: center;
     color: white;
@@ -231,21 +158,21 @@ header{
     align-items: center;
     background: rgb(205, 80, 255);
 }
-.home ul li .vid .vids{
+.vids{
     color: rebeccapurple;
     list-style: none;
     display: inline-block;
 }
 @media (max-width: 670px){
-    .home ul li .vid .vids {
+    .vids {
         margin-bottom: 2%;
         position: relative;
         padding-bottom: 56.25%;
         height: 0;   
         display: block;
     }
-    .home ul li .vid .vids embed,
-    .home ul li .vid .vids iframe{
+    .vids embed,
+    .vids iframe{
         position: absolute;
         top: 0;
         left: 0;
@@ -254,27 +181,24 @@ header{
     }
 }
 .studios{
-    height: 80px;
+    position: absolute;
     width: 100%;
     background: black;
+    padding: 0.5em;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 30px solid rebeccapurple;
+    bottom: 0;
 }
 .studios ul li{
     list-style: none;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 .studios ul li span{
     color: #8700fe;
-}
-.end{
-    background: rebeccapurple;
-    height: 30px;
-    width: 100%;
 }
 ion-icon{
     pointer-events: none;
