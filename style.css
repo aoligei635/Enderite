@@ -16,6 +16,12 @@ body{
     padding-bottom: 6.8em;
     min-height: 100vh;
 }
+.logo{
+    transition: 0.5s ease-in-out
+}
+.logo:hover{
+    transform: scale(1.2);
+}
 h1{
     display: flex;
     justify-content: center;
@@ -48,6 +54,10 @@ header{
 .nav li{
     display: inline-block;
     padding: 0px 20px;
+    transition: 0.5s
+}
+.nav li:hover{
+    transform: scale(1.2);
 }
 .nav li a{
     transition: color 0.5s ease;
@@ -72,7 +82,6 @@ header{
     justify-content: center;
 }
 .dabox div a{
-    display: flex;
     justify-content: center;
 }
 .extra{
@@ -85,37 +94,52 @@ header{
     margin-bottom: 3em;
     background: rgb(205, 80, 255);
 }
+.links{
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+.links li{
+    list-style: none;
+    text-align: center;
+    display: inline;
+    padding: 1em;
+    height: 6em;
+    width: 6em;
+}
+.links li a{
+    text-decoration: none;
+    display: block;
+    transition: 0.5s;
+}
+.links li a:hover{
+    transform: scale(1.2);
+}
 .icon{
-    position: relative;
     line-height: 40px;
     transition: 0.5s;
     font-size: 45px;
     color: white;
 }
 .iconYT{
-    position: relative;
     line-height: 40px;
     transition: 0.5s;
     font-size: 45px;
     color: red;
 }
 .iconTW{
-    position: relative;
     line-height: 40px;
     transition: 0.5s;
     font-size: 45px;
     color: rebeccapurple;
 }
 .iconDC{
-    position: relative;
     line-height: 40px;
     transition: 0.5s;
     font-size: 45px;
     color: blue;
 }
 .text{
-    position: absolute;
-    bottom: 3em;
     font-size: 10;
     font-weight: 200;
     transition: 0.25s;
