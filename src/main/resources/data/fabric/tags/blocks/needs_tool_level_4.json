@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "lolenderite:enderite_block",
+    "lolenderite:enderite_ore",
+    "lolenderite:obsidian_infused_enderite_block"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+	"schemaVersion": 1,
+	"id": "lolenderite",
+	"version": "0.8.beta-1.19.4",
+	"name": "Enderite",
+	"description": "Adds Enderite to the Game :]",
+	"authors": [
+		"LieOnLion"
+	],
+	"contact": {
+		"homepage": "https://lieonlion.github.io/Enderite/",
+		"issues": "https://github.com/LieOnLion/Enderite/issues",
+		"sources": "https://github.com/LieOnLion/Enderite"
+	},
+	"license": "MIT",
+	"icon": "assets/lolenderite/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.lieonlion.enderite.Enderite"
+		],
+		"client": [
+			"io.github.lieonlion.enderite.EnderiteClient"
+		],
+		"fabric-datagen": [
+			"io.github.lieonlion.enderite.datagen.DataGenerator"
+		]
+	},
+	"mixins": [
+		"lolenderite.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.19",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.youtube": "https://www.youtube.com/@lieonlion",
+				"modmenu.discord": "https://discord.com/invite/sA42pp6cuX"
+			}
+		}
+	}
+}
