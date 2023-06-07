@@ -29,7 +29,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
@@ -48,7 +48,6 @@ public class Enderite {
         MinecraftForge.EVENT_BUS.register(this);
 
         modEventBus.addListener(this::addCreative);
-        modEventBus.addListener(this::onClientSetup);
 
         ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, ClientConfigs.SPEC, MODID + "-client.toml");
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, CommonConfigs.SPEC, MODID + "-common.toml");
@@ -61,11 +60,6 @@ public class Enderite {
                     .add(LootTableReference.lootTableReference(Enderite.END_CITY_TREASURE_INJECTION_LOCATION))
                     .name(Enderite.MODID + "_injection").build());
         }
-    }
-
-    private void onClientSetup(final FMLCommonSetupEvent event) {
-        ItemProperties.register(ItemsInit.ENDERITE_PLATED_ELYTRA.get(), new ResourceLocation(MODID, "broken"),
-                (itemStack, clientWorld, livingEntity, seed) -> EnderitePlatedElytraItem.isUseable(itemStack) ? 0 : 1);
     }
 
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
@@ -105,6 +99,12 @@ public class Enderite {
 
     @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class RegistryEventsClient {
+        @SubscribeEvent
+        public static void loadCompleteEvent(FMLLoadCompleteEvent event) {
+            ItemProperties.register(ItemsInit.ENDERITE_PLATED_ELYTRA.get(), new ResourceLocation(Enderite.MODID, "broken"),
+                    (itemStack, clientWorld, livingEntity, seed) -> EnderitePlatedElytraItem.isUseable(itemStack) ? 0 : 1);
+        }
+
         @SubscribeEvent(priority = EventPriority.LOW)
         public static void renderPlayer(final EntityRenderersEvent.AddLayers event) {
             LivingEntityRenderer<AbstractClientPlayer, EntityModel<AbstractClientPlayer>> renderer = event.getSkin("default");

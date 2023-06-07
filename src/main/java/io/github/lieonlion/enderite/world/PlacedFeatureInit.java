@@ -1,7 +1,6 @@
 package io.github.lieonlion.enderite.world;
 
 import io.github.lieonlion.enderite.Enderite;
-import io.github.lieonlion.enderite.config.CommonConfigs;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;

@@ -1,7 +1,6 @@
 package io.github.lieonlion.enderite.world;
 
 import io.github.lieonlion.enderite.Enderite;
-import io.github.lieonlion.enderite.config.CommonConfigs;
 import io.github.lieonlion.enderite.init.BlocksInit;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;

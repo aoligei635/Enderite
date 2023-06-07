@@ -4,7 +4,6 @@ import java.util.EnumMap;
 import java.util.function.Supplier;
 
 import io.github.lieonlion.enderite.Enderite;
-import io.github.lieonlion.enderite.config.CommonConfigs;
 import net.minecraft.Util;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
