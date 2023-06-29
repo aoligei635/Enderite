@@ -38,7 +38,7 @@
 			}
 		},
 		{
-			"model": "lolenderite:trim/enderite_boots_enderite_trim",
+			"model": "lolenderite:trim/enderite_boots_enderite_darker_trim",
 			"predicate": {
 				"trim_type": 0.79842
 			}
