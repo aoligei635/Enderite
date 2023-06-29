@@ -44,6 +44,12 @@
       }
     },
     {
+      "model": "lolenderite:trim/chainmail_helmet_enderite_trim",
+      "predicate": {
+        "trim_type": 0.79842
+      }
+    },
+    {
       "model": "minecraft:item/chainmail_helmet_diamond_trim",
       "predicate": {
         "trim_type": 0.8
