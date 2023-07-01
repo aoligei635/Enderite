@@ -8,6 +8,12 @@
 			}
 		},
 		{
+			"model": "lolenderite:trim/enderite_chestplate_iron_trim",
+			"predicate": {
+				"trim_type": 0.2
+			}
+		},
+		{
 			"model": "lolenderite:trim/enderite_chestplate_netherite_trim",
 			"predicate": {
 				"trim_type": 0.3
